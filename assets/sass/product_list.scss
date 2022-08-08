@@ -1,0 +1,124 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 4rem 0;
+
+  .main-title {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+  }
+
+  .products-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto auto 1fr auto);
+    grid-gap: 10px;
+    padding: 2rem 1rem 0 1rem;
+
+    .product {
+      border-radius: 5px;
+      background-color: #FFF;
+      border: solid 1px #E5E5E5;
+
+      display: grid;
+      grid-column: span 1;
+      grid-row: span 5;
+      grid-template-rows: subgrid;
+
+      &-name,
+      &-description,
+      &-price {
+        padding: 0.4rem 1rem;
+      }
+
+      .image-container {
+        max-height: 150px !important;
+        max-width: 100%;
+      }
+
+      &-image {
+        // height: 200px;
+        // max-width: 200px;
+        width: 100%;
+        height: 150px;
+        object-fit: scale-down;
+        padding: 1rem 2rem;
+      }
+
+      &-name {
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+
+      &-description {
+        font-size: 0.8rem;
+        color: #919497;
+      }
+
+      &-price {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      &-add {
+        all: unset;
+        padding: 0.6rem 0;
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #0000A3;
+        border-top: solid 1px #E5E5E5;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #F4F4F4;
+      }
+    }
+
+  }
+
+  .recommend {
+    width: 100%;
+    padding: 1rem;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: capitalize;
+      padding: 1rem 1.3rem;
+      border: solid 1px #E5E5E5;
+      border-radius: 5px;
+
+      .category-name {
+        font-size: 1.5rem;
+        margin-top: 2px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    .products-list {
+      grid-template-columns: repeat(3, 1fr);
+
+      .product {
+        grid-column: span 1;
+      }
+    }
+  }
+}
+
+@media (min-width: 1341px) {
+  .content {
+    .recommend {
+      max-width: 1341px;
+    }
+  }
+}

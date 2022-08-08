@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.body {
+  position: relative;
+}
+
+.header {
+  height: 10vh;
+  max-height: 10vh;
+}
+
+.content {
+  min-height: calc(100vh - (10vh + 10vh));
+}
+
+.footer {
+  min-height: 10vh;
+}

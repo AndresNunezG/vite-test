@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.35fb08a8.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <title>axiacore frontend test</title>
+    <script type="module" crossorigin src="assets/index.a489847c.js"></script>
+    <link rel="stylesheet" href="assets/index.df02ebcc.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <div class="menu-icon">
+          <img src="assets/menu.6bd4673a.svg" class="logo" alt="menu icon" />
+        </div>
+        <div>
+          <img src="assets/logo.35fb08a8.svg" class="logo" alt="axiacore logo" />
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header-left">
+          <div>
+            <img src="assets/search.25c671ca.svg" class="logo" alt="seach icon" />
+          </div>
+          <div class="cart-icon container">
+            <div class="cart-icon">
+              <img src="assets/cart.1859d947.svg" class="logo" alt="cart icon" />
+            </div>
+            <div class="globe">9</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <h1 class="main-title">cervezas</h1>
+      <div id="products-list" class="products-list"></div>
+      <div class="recommend">
+        <div class="recommend-content">
+          <div>
+            <p>sigue mercando</p>
+            <p class="category-name">vinos</p>
+          </div>
+          <div>
+            <img src="assets/arrow-right.27e6af65.svg" class="logo" alt="arrow-right icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <section class="help">
+        <p class="help-text">¿podemos ayudarle?</p>
+        <div>
+          <div class="icons">
+            <div class="icon-container">
+              <div class="icon">
+                <img src="assets/intercom.e48e1a2d.svg" class="logo" alt="chat icon" />
+              </div>
+              <p>chat</p>
+            </div>
+            <div class="icon-container">
+              <div class="icon">
+                <img src="assets/phone.843d1ba4.svg" class="logo" alt="phone icon" />
+              </div>
+              <p>llamar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <ul class="about-list">
+          <li>sobre nosotros</li>
+          <li>medidas de seguridad (covid-19)</li>
+          <li>cómo mercar</li>
+          <li>proveedores</li>
+          <li>contáctenos</li>
+          <li>zona de cobertura</li>
+        </ul>
+        <div class="divider"></div>
+        <div class="social">
+          <img src="assets/instagram.019aff82.svg" class="social-link" alt="instragram icon" />
+        </div>
+        <p class="policy-text">política de tratamiento de datos personales</p>
+      </section>
+      <section class="powered">
+        <small id="powered-text">@2020 Axiacore</small>
+      </section>
+    </footer>
+    <div class="filter-btn-container">
+      <div class="filter-btn">
+        <button data-modal="filters-modal" id="open-filters-btn">
+          <p>filtrar</p>
+          <img src="assets/filters.9108e2f7.svg" alt="filter icon" />
+          <p class="filters-selected-label"></p>
+        </button>
+      </div>
+    </div>
+    <div class="filter-container" id="filters-modal">
+      <div class="fade-bg"></div>
+      <div class="modal-dialog">
+        <div class="close-filters">
+          <img src="assets/close.296e1479.svg" class="modal-exit" alt="close icon" />
+        </div>
+        <div class="filter-options">
+          <p class="title">filtros</p>
+          <div class="filter-option">
+            <label for="option-1">Rubia</label>
+            <input id="option-1" data-filter-option="1" type="checkbox">
+          </div>
+          <div class="filter-option">
+            <label for="option-2">Morena</label>
+            <input id="option-2" data-filter-option="2" type="checkbox">
+          </div>
+          <div class="filter-option">
+            <label for="option-3">Roja</label>
+            <input id="option-3" data-filter-option="3" type="checkbox">
+          </div>
+        </div>
+        <div class="actions">
+          <div class="btn-container">
+            <button id="clean-filters" class="clean-filters">limpiar</button>
+          </div>
+          <div class="btn-container">
+            <button id="apply-filters" class="apply-filters">
+              <p>filtrar</p>
+              <img src="assets/filters.9108e2f7.svg" alt="filter icon" />
+              <p class="filters-selected-label"></p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

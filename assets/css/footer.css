@@ -1,0 +1,85 @@
+.footer .help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+  background-color: #000;
+  color: #FFF;
+}
+.footer .help .help-text {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.footer .help .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .help .icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+.footer .help .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+}
+.footer .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1rem;
+}
+.footer .about ul {
+  list-style: none;
+}
+.footer .about ul li {
+  margin-bottom: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+.footer .about .divider {
+  min-height: 1px;
+  width: 10vw;
+  margin: 1.5rem 0 2.5rem 0;
+  background-color: #BCBCBC;
+}
+.footer .about .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #0000A3;
+}
+.footer .about .policy-text {
+  margin-top: 1.2rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer .powered {
+  padding: 1rem 0;
+  background-color: #000;
+  color: #FFF;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+}
